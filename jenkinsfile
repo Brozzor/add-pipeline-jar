@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: '*/main', url: 'https://github.com/Brozzor/add-pipeline-jar.git',
+            }
+        }
+        stage('Build') {
+            steps {
+                sh './gradlew clean build test publish'
+            }
+            post {
+                always {
+                    archiveArtifacts 'build/libs/*.jar'
+                }
+            }
+        }
+    }
+}

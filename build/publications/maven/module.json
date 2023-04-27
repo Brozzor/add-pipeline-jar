@@ -28,10 +28,10 @@
           "name": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
           "url": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
           "size": 16047,
-          "sha512": "f282936aa2594b51ee2052b1c18a92e0d4c3f571e2bd63e9ccc7b8b2792a83baf412619d5f840f06713c77b835fd666fe2944b07804139fa080b00622021c047",
-          "sha256": "113da1f1ef174f5c598cbe23c31ea6191976d8b32941844afe4895a19a6e30be",
-          "sha1": "9fab88cab4501270839c08ec140a8422d4b66408",
-          "md5": "48c7c6e6abdd18f44a7e8f6037fd9f9f"
+          "sha512": "d65a17e546372f8b4af58efad331fff96b69c256b35a908a9cd0e653fc48cac352a16ee99b721c43089e4a58fc6d31cd667af2dc13e64a5deabc678d7a78df40",
+          "sha256": "cce1d36affbd6d02a8c7b8b9b22091dca5076d4a039267941d20981462ff3a6d",
+          "sha1": "27d78c6ebdc6ee0645d0b1cfa60b5deb483fe120",
+          "md5": "1f92bc53aa6bdce0d9380d9408302a49"
         }
       ]
     },
@@ -88,10 +88,10 @@
           "name": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
           "url": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
           "size": 16047,
-          "sha512": "f282936aa2594b51ee2052b1c18a92e0d4c3f571e2bd63e9ccc7b8b2792a83baf412619d5f840f06713c77b835fd666fe2944b07804139fa080b00622021c047",
-          "sha256": "113da1f1ef174f5c598cbe23c31ea6191976d8b32941844afe4895a19a6e30be",
-          "sha1": "9fab88cab4501270839c08ec140a8422d4b66408",
-          "md5": "48c7c6e6abdd18f44a7e8f6037fd9f9f"
+          "sha512": "d65a17e546372f8b4af58efad331fff96b69c256b35a908a9cd0e653fc48cac352a16ee99b721c43089e4a58fc6d31cd667af2dc13e64a5deabc678d7a78df40",
+          "sha256": "cce1d36affbd6d02a8c7b8b9b22091dca5076d4a039267941d20981462ff3a6d",
+          "sha1": "27d78c6ebdc6ee0645d0b1cfa60b5deb483fe120",
+          "md5": "1f92bc53aa6bdce0d9380d9408302a49"
         }
       ]
     }
