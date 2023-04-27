@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/Brozzor/add-pipeline-jar.git'
+                git url: 'https://github.com/Brozzor/ynov-eval-core-api-java.git'
             }
         }
         stage('Build') {
