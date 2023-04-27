@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: '*/main', url: 'https://github.com/Brozzor/add-pipeline-jar.git',
+                git branch: '*/main', url: 'https://github.com/Brozzor/add-pipeline-jar.git'
             }
         }
         stage('Build') {
