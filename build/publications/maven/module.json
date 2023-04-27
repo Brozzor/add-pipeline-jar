@@ -1,0 +1,99 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "fr.ynov.eval",
+    "module": "ynov-eval-core-api-java-romain-buisson",
+    "version": "0.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
+          "url": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
+          "size": 16047,
+          "sha512": "f282936aa2594b51ee2052b1c18a92e0d4c3f571e2bd63e9ccc7b8b2792a83baf412619d5f840f06713c77b835fd666fe2944b07804139fa080b00622021c047",
+          "sha256": "113da1f1ef174f5c598cbe23c31ea6191976d8b32941844afe4895a19a6e30be",
+          "sha1": "9fab88cab4501270839c08ec140a8422d4b66408",
+          "md5": "48c7c6e6abdd18f44a7e8f6037fd9f9f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-web",
+          "excludes": [
+            {
+              "group": "jakarta.activation",
+              "module": "jakarta.activation-api"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-data-jpa",
+          "excludes": [
+            {
+              "group": "jakarta.activation",
+              "module": "jakarta.activation-api"
+            }
+          ]
+        },
+        {
+          "group": "org.springdoc",
+          "module": "springdoc-openapi-ui",
+          "version": {
+            "requires": "1.6.11"
+          },
+          "excludes": [
+            {
+              "group": "jakarta.activation",
+              "module": "jakarta.activation-api"
+            }
+          ]
+        },
+        {
+          "group": "com.h2database",
+          "module": "h2"
+        }
+      ],
+      "files": [
+        {
+          "name": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
+          "url": "ynov-eval-core-api-java-romain-buisson-0.0.1-plain.jar",
+          "size": 16047,
+          "sha512": "f282936aa2594b51ee2052b1c18a92e0d4c3f571e2bd63e9ccc7b8b2792a83baf412619d5f840f06713c77b835fd666fe2944b07804139fa080b00622021c047",
+          "sha256": "113da1f1ef174f5c598cbe23c31ea6191976d8b32941844afe4895a19a6e30be",
+          "sha1": "9fab88cab4501270839c08ec140a8422d4b66408",
+          "md5": "48c7c6e6abdd18f44a7e8f6037fd9f9f"
+        }
+      ]
+    }
+  ]
+}
