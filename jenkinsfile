@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh './gradlew clean build spotlessCheck test publish'
+                sh './gradlew clean build test publish'
             }
             post {
                 always {

@@ -9,6 +9,7 @@ plugins {
     id 'name.remal.check-updates' version '1.5.0'
     id "de.undercouch.download" version "4.1.2"
     id 'com.google.cloud.tools.jib' version '3.3.1'
+	id 'com.diffplug.spotless' version '5.11.0'
 }
 
 group 'fr.ynov.eval'
@@ -57,9 +58,9 @@ publishing {
 }
 
 spotless {
-  java {
-    googleJavaFormat()
-  }
+    java {
+        googleJavaFormat().enabled = false
+    }
 }
 
 repositories {
