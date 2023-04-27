@@ -1,29 +1,15 @@
 pipeline {
-  agent any stages {
-    stage('Gradle Build') {
-      steps {
-        bat 'gradlew clean build'
-      }
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh './gradlew clean build spotlessCheck test publish'
+            }
+            post {
+                always {
+                    archiveArtifacts 'build/libs/*.jar'
+                }
+            }
+        }
     }
-    stage('Gradle Spotless ckeck') {
-      steps {
-        bat 'gradlew spotlessCheck'
-      }
-    }
-    stage('Tests') {
-      steps {
-        bat 'gradlew test'
-      }
-    }
-    stage('Deploy') {
-      steps {
-        bat 'gradlew publish'
-      }
-    }
-  }
-  post {
-    always {
-      archiveArtifacts artifacts: 'build/libs/*.jar', fingerprint: true
-    }
-  }
 }
