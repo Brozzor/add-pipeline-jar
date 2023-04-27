@@ -8,7 +8,6 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.13.RELEASE'
 	id 'name.remal.check-updates' version '1.5.0'
 	id "de.undercouch.download" version "4.1.2"
-	id 'com.google.cloud.tools.jib' version '3.3.1'
 	id "com.diffplug.spotless" version "6.15.0"
 }
 
@@ -33,23 +32,6 @@ spotless {
 			target '*.gradle'
 			greclipse()
 		}
-	}
-}
-
-
-jib {
-	from {
-		image = 'eclipse-temurin:17'
-	}
-	to {
-		image = 'nexus-ynov-sandbox.asys-cloud.fr/repository/ynov-docker/' + project.name + ":" + version
-		auth {
-			username = 'jenkins'
-			password = 'hDkxFxBSwmQ3ANLBFt'
-		}
-	}
-	container {
-		environment = ['ARTIFACT_VERSION': version]
 	}
 }
 
